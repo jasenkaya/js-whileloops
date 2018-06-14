@@ -18,6 +18,11 @@ while (i<10){
 
 /*1. Use a while loop and print out a list of numbers from 1 to 10*/
 
+var i=1
+while(i<11){
+	console.log(i)
+	i++
+}
 
 
 /*2. Use a while loop to create the following message:
@@ -28,6 +33,12 @@ while (i<10){
 ...
 ...
 "Now serving 11"*/
+
+var i=1
+while(i<12){
+	console.log("Now serving " + i)
+	i++
+}
 
 
 
@@ -42,6 +53,12 @@ while (i<10){
 var tvShows = ["Breaking Bad", "Game of Thrones", "The Bachelor", "The Walking Dead", "Keeping Up with the Kardasians"];
 
 
+var i=0
+while(i<tvShows.length){
+	console.log("I like to watch "+ tvShows[i])
+	i++
+}
+
 
 /*4. Generate a multiplication table for the number 3 and print out the following:
 
@@ -54,6 +71,13 @@ var tvShows = ["Breaking Bad", "Game of Thrones", "The Bachelor", "The Walking D
 9 x 3 = 27
 
 */
+
+
+var i=1
+while(i<10){
+	console.log(i + " x 3 = "+ i*3)
+	i++
+}
 
 
 
@@ -85,6 +109,19 @@ devleague homie!
 ...
 ...
 ...*/
+var i=1
+while(i<101){
+	if(i%3===0 && i%5===0){
+	console.log("devleague homie!!!!!")
+	}else if(i%3===0){
+	console.log("dev")
+	}else if(i%5===0){
+		console.log("league")
+	}else{
+		console.log(i)
+	}
+	i++
+}
 
 
 /*
@@ -99,5 +136,18 @@ devleague homie!
 */ 
 
 
+var donutPrice= 5
+var donutBought = 0
+
+function buyDonut(budget){
+while (budget>donutPrice){
+	var budget = budget - donutPrice
+	donutBought++
+	console.log("You bought "+ donutBought + " donuts and have $" + budget + ".00 in your wallet")
+}
+}
+
+var money = 120
+buyDonut(money)
 
 
