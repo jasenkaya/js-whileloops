@@ -1,4 +1,4 @@
-//while loops
+//while loops comment
 
 /*If you do not know how many times the code should run, using a while loop can help. Your code in the while loop will continue to run for as long as the condition is true.*/
 
